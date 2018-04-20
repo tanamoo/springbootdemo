@@ -2,29 +2,38 @@ package com.momo.springbootdemo.bean;
 
 public class User {
 	
-	private String username;
-	private String password;
+	private int id;
+	private String name;
+	private String pass;
 	
 	public User() {
 		
 	}
 	
 	public User(String username, String password) {
-		this.username = username;
-		this.password = password;
+		this.name = username;
+		this.pass = password;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	public String getUsername() {
-		return username;
+		return name;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.name = username;
 	}
 	public String getPassword() {
-		return password;
+		return pass;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		this.pass = password;
 	}
 	
 	

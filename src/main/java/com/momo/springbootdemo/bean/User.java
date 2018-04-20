@@ -23,16 +23,16 @@ public class User {
 		this.id = id;
 	}
 	
-	public String getUsername() {
+	public String getName() {
 		return name;
 	}
-	public void setUsername(String username) {
+	public void setName(String username) {
 		this.name = username;
 	}
-	public String getPassword() {
+	public String getPass() {
 		return pass;
 	}
-	public void setPassword(String password) {
+	public void setPass(String password) {
 		this.pass = password;
 	}
 	

@@ -13,7 +13,11 @@
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
           select LAST_INSERT_ID()
     </selectKey>
-          insert into user(name,pass) values(#{username},#{password})
+          insert into user(name,pass) values(#{name},#{pass})
     </insert>
+    
+    <select id="getUser" resultType="com.momo.springbootdemo.bean.User">
+          select * from user where name = #{name} and pass = #{pass}
+    </select>
 
 </mapper>

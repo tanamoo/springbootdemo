@@ -15,14 +15,22 @@ public class UserService {
 	@Autowired
 	private UserMapper usermapper;
 	
+	//通过id查找用户
 	public User getUserById(int id) throws Exception {
 		return usermapper.getUserById(id);
 		
 	}
 	
+	//用户注册
 	public void addUser(User user) throws Exception{
 		usermapper.addUser(user);
 	}
+	
+	//通过用户名和密码查找用户，用于用户登录验证
+	public User getUser(String name, String pass) throws Exception{
+		return usermapper.getUser(name, pass);
+	}
+	
 	
 	
 
